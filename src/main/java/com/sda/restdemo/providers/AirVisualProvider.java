@@ -15,7 +15,7 @@ public class AirVisualProvider {
     private final RestTemplate restTemplate;
 
     public CountriesResponse fetchCountriesList() {
-        String url = String.format("%sx/v2/countries?key=%s", appConfig.getApiBaseUrl(), appConfig.getApiKey());
+        String url = String.format("%s/v2/countries?key=%s", appConfig.getApiBaseUrl(), appConfig.getApiKey());
         ResponseEntity<CountriesResponse> response = restTemplate.getForEntity(url, CountriesResponse.class);
         return response.getBody();
     }
