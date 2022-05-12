@@ -1,7 +1,7 @@
 package com.sda.restdemo.controllers;
 
 import com.sda.restdemo.model.Country;
-import com.sda.restdemo.model.PageDTO;
+import com.sda.restdemo.dto.PageDTO;
 import com.sda.restdemo.services.CountriesService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/countries")
 @RequiredArgsConstructor
+@RequestMapping("/api/countries")
 public class CountriesController {
 
     private final CountriesService countriesService;

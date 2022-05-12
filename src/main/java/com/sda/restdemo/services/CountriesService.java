@@ -1,12 +1,12 @@
 package com.sda.restdemo.services;
 
-import com.sda.restdemo.model.Country;
-import com.sda.restdemo.model.PageDTO;
-import com.sda.restdemo.repos.CountriesRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
+import com.sda.restdemo.model.Country;
+import com.sda.restdemo.dto.PageDTO;
+import com.sda.restdemo.repositories.CountriesRepository;
 
 @Service
 @RequiredArgsConstructor

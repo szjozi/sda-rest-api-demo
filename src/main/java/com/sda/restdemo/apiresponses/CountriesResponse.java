@@ -1,4 +1,4 @@
-package com.sda.restdemo.model;
+package com.sda.restdemo.apiresponses;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -7,15 +7,16 @@ import java.util.List;
 
 @Data
 public class CountriesResponse {
-
     @JsonProperty("data")
-    private List<CountriesDTO> countriesDTOList;
+    List<CountryNameResponse> countryNameResponseList;
 
 
     @Data
-    public static class CountriesDTO {
+    public static class CountryNameResponse {
 
         @JsonProperty("country")
         private String name;
+
+
     }
 }
